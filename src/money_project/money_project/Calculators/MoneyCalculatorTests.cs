@@ -27,5 +27,21 @@ namespace MoneyModule.Core.Calculators
             Assert.NotNull(result);
             Assert.Equal(30.0m, result.Amount);
         }
+
+        [Fact]
+        public void ShouldThrowExceptionWhenFindTheLargestAmountIfDistinctCurrency()
+        {
+            //arrange
+            IEnumerable<IMoney> monies = new Money[]
+            {
+                new Money() { Amount = 30.0m, Currency = "GBP" },
+                new Money() { Amount = 12.8m, Currency = "USD" }
+            };
+
+            var calculator = new MoneyCalculator();
+
+            //Assert
+            Assert.Throws<ArgumentException>(() => calculator.Max(monies));
+        }
     }
 }
