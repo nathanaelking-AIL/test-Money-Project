@@ -1,0 +1,17 @@
+Problem Statement
+-----------------
+Provide a working solution containing implementations of the following interfaces, with tests demonstrating their correctness.
+
+Requirements
+------------
+Given I have List of money of same currency.
+When I send the list to find largest amount
+The amount is returned.
+
+Given I have List of money of distinct currency.
+When I send the list to find largest amount
+The exception “All monies are not in the same currency.” is returned.
+
+Given I have List of money of same or distinct currencies.
+When I send the list to find sum of all currencies
+The list of each currency total is returned.
