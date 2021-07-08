@@ -16,7 +16,7 @@ namespace MoneyModule.Core.Calculators
             if (monies is null)
                 throw new ArgumentNullException("No money list passed in argument.");
 
-            if (monies.Select(x=>x.Currency).Distinct().Count()>1)
+            if (monies.Select(x => x.Currency).Distinct().Count() > 1)
                 throw new ArgumentException("All monies are not in the same currency.");
 
             return new Money
@@ -24,6 +24,19 @@ namespace MoneyModule.Core.Calculators
                 Amount = monies.Max(x => x.Amount),
                 Currency = monies.FirstOrDefault().Currency
             };
+        }
+
+        public IEnumerable<IMoney> SumPerCurrency(IEnumerable<IMoney> monies)
+        {
+            var result = monies
+                        .GroupBy(x => x.Currency)
+                        .Select(y => new Money()
+                        { 
+                            Amount = y.Sum(z => z.Amount), 
+                            Currency = y.Key 
+                        });
+
+            return result;
         }
     }
 }
