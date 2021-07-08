@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace MoneyModule.Core.Calculators
 {
-    public class MoneyCalculator
+    public class MoneyCalculator : IMoneyCalculator
     {
         public MoneyCalculator()
         {
@@ -34,9 +34,9 @@ namespace MoneyModule.Core.Calculators
             var result = monies
                         .GroupBy(x => x.Currency)
                         .Select(y => new Money()
-                        { 
-                            Amount = y.Sum(z => z.Amount), 
-                            Currency = y.Key 
+                        {
+                            Amount = y.Sum(z => z.Amount),
+                            Currency = y.Key
                         });
 
             return result;
