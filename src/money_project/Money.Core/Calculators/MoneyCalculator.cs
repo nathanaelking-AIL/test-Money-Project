@@ -28,6 +28,9 @@ namespace MoneyModule.Core.Calculators
 
         public IEnumerable<IMoney> SumPerCurrency(IEnumerable<IMoney> monies)
         {
+            if (monies is null)
+                throw new ArgumentNullException("No money list passed in argument.");
+
             var result = monies
                         .GroupBy(x => x.Currency)
                         .Select(y => new Money()

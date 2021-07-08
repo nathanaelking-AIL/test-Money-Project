@@ -49,9 +49,10 @@ namespace MoneyModule.Core.Calculators
         {
             //Arrange
             var calculator = new MoneyCalculator();
-
+            var message = "No money list passed in argument.";
             //Assert
-            Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
+            var exception =Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
+            Assert.Equal(message, exception.ParamName);
         }
 
         [Fact]
@@ -82,6 +83,17 @@ namespace MoneyModule.Core.Calculators
                 result.FirstOrDefault(x => x.Currency.Equals("CDN")).Amount);
         }
 
+        [Fact]
+        public void ShouldReturnArgumentExceptionIfNullArgumentToSumPerCurrency()
+        {
+            //arrange
+            var calculator = new MoneyCalculator();
+            var message = "No money list passed in argument.";
+
+            //Assert
+            var exception = Assert.Throws<ArgumentNullException>(() => calculator.SumPerCurrency(null));
+            Assert.Equal(message, exception.ParamName);
+        }
 
     }
 }
