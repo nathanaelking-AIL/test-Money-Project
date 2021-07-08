@@ -6,3 +6,4 @@ E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\
 E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\MoneyModule.Core.csproj.CoreCompileInputs.cache
 E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\MoneyModule.Core.dll
 E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\MoneyModule.Core.pdb
+E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\MoneyModule.Core.csprojAssemblyReference.cache

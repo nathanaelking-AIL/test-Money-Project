@@ -1,8 +1,7 @@
-﻿using System;
+﻿using MoneyModule.Core.Domain;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
-using MoneyModule.Core.Domain;
 
 namespace MoneyModule.Core.Calculators
 {
@@ -42,6 +41,16 @@ namespace MoneyModule.Core.Calculators
 
             //Assert
             Assert.Throws<ArgumentException>(() => calculator.Max(monies));
+        }
+
+        [Fact]
+        public void ShouldThrowNullExceptionWhenFindTheLargestAmountArgumentIsNull()
+        {
+            //Arrange
+            var calculator = new MoneyCalculator();
+
+            //Assert
+            Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
         }
     }
 }

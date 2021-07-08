@@ -1,7 +1,7 @@
-﻿using System;
+﻿using MoneyModule.Core.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using MoneyModule.Core.Domain;
 
 namespace MoneyModule.Core.Calculators
 {
@@ -13,9 +13,11 @@ namespace MoneyModule.Core.Calculators
 
         public Money Max(IEnumerable<IMoney> monies)
         {
+            if (monies is null)
+                throw new ArgumentNullException("No money list passed in argument.");
+
             if (monies.Select(x=>x.Currency).Distinct().Count()>1)
                 throw new ArgumentException("All monies are not in the same currency.");
-
 
             return new Money
             {

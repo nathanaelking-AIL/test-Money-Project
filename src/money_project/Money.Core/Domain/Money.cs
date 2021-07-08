@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MoneyModule.Core.Domain
+﻿namespace MoneyModule.Core.Domain
 {
     public class Money : IMoney
     {
