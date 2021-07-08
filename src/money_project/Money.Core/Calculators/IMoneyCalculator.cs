@@ -5,7 +5,7 @@ namespace MoneyModule.Core.Calculators
 {
     public interface IMoneyCalculator
     {
-        Money Max(IEnumerable<IMoney> monies);
+        IMoney Max(IEnumerable<IMoney> monies);
         IEnumerable<IMoney> SumPerCurrency(IEnumerable<IMoney> monies);
     }
 }

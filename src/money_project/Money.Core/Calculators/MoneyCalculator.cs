@@ -11,7 +11,7 @@ namespace MoneyModule.Core.Calculators
         {
         }
 
-        public Money Max(IEnumerable<IMoney> monies)
+        public IMoney Max(IEnumerable<IMoney> monies)
         {
             if (monies is null)
                 throw new ArgumentNullException("No money list passed in argument.");

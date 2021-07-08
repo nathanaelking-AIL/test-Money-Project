@@ -14,16 +14,16 @@ namespace MoneyModule.Core.Calculators
             //arrange
             IEnumerable<IMoney> monies = new Money[]
             {
-                new Money() { Amount = 30.0m, Currency = "GBP" },
-                new Money() { Amount = 12.8m, Currency = "GBP" }
+                new Money { Amount = 30.0m, Currency = "GBP" },
+                new Money { Amount = 12.8m, Currency = "GBP" }
             };
 
             var calculator = new MoneyCalculator();
 
             //act
-            Money result = calculator.Max(monies);
+            IMoney result = calculator.Max(monies);
 
-            //Assert
+            //assert
             Assert.NotNull(result);
             Assert.Equal(30.0m, result.Amount);
         }
@@ -34,24 +34,26 @@ namespace MoneyModule.Core.Calculators
             //arrange
             IEnumerable<IMoney> monies = new Money[]
             {
-                new Money() { Amount = 30.0m, Currency = "GBP" },
-                new Money() { Amount = 12.8m, Currency = "USD" }
+                new Money { Amount = 30.0m, Currency = "GBP" },
+                new Money { Amount = 12.8m, Currency = "USD" }
             };
 
             var calculator = new MoneyCalculator();
 
-            //Assert
+            //assert
             Assert.Throws<ArgumentException>(() => calculator.Max(monies));
         }
 
         [Fact]
         public void ShouldThrowNullExceptionWhenFindTheLargestAmountArgumentIsNull()
         {
-            //Arrange
+            //arrange
             var calculator = new MoneyCalculator();
             var message = "No money list passed in argument.";
-            //Assert
-            var exception =Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
+
+            //assert
+            var exception =Assert.Throws<ArgumentNullException>(
+                () => calculator.Max(null));
             Assert.Equal(message, exception.ParamName);
         }
 
@@ -61,11 +63,11 @@ namespace MoneyModule.Core.Calculators
             //arrange
             IEnumerable<IMoney> monies = new Money[]
             {
-                new Money() { Amount = 30.0m, Currency = "GBP" },
-                new Money() { Amount = 30.0m, Currency = "GBP" },
-                new Money() { Amount = 12.8m, Currency = "USD" },
-                new Money() { Amount = 30.8m, Currency = "USD" },
-                new Money() { Amount = 16.8m, Currency = "CDN" },
+                new Money { Amount = 30.0m, Currency = "GBP" },
+                new Money { Amount = 30.0m, Currency = "GBP" },
+                new Money { Amount = 12.8m, Currency = "USD" },
+                new Money { Amount = 30.8m, Currency = "USD" },
+                new Money { Amount = 16.8m, Currency = "CDN" },
             };
 
             var calculator = new MoneyCalculator();
@@ -90,8 +92,9 @@ namespace MoneyModule.Core.Calculators
             var calculator = new MoneyCalculator();
             var message = "No money list passed in argument.";
 
-            //Assert
-            var exception = Assert.Throws<ArgumentNullException>(() => calculator.SumPerCurrency(null));
+            //assert
+            var exception = Assert.Throws<ArgumentNullException>(
+                () => calculator.SumPerCurrency(null));
             Assert.Equal(message, exception.ParamName);
         }
 
