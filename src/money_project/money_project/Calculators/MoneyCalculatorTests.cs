@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
+using MoneyModule.Core.Domain;
 
-namespace Money.Core.Calculators
+namespace MoneyModule.Core.Calculators
 {
     public class MoneyCalculatorTests
     {
@@ -11,7 +12,7 @@ namespace Money.Core.Calculators
         public void ShouldFindTheLargestAmountIfSameCurrency()
         {
             //arrange
-            IEnumerable<Money> monies = new Money[]
+            IEnumerable<IMoney> monies = new Money[]
             {
                 new Money() { Amount = 30.0m, Currency = "GBP" },
                 new Money() { Amount = 12.8m, Currency = "GBP" }

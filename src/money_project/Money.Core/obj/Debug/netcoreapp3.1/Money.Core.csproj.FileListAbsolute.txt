@@ -1,0 +1,4 @@
+E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\Money.Core.csprojAssemblyReference.cache
+E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\Money.Core.AssemblyInfoInputs.cache
+E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\Money.Core.AssemblyInfo.cs
+E:\C# Training\easyJetTest\src\money_project\Money.Core\obj\Debug\netcoreapp3.1\Money.Core.csproj.CoreCompileInputs.cache

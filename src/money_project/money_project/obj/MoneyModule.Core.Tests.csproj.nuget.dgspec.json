@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj": {}
+    "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj": {}
   },
   "projects": {
-    "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj": {
+    "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj",
-        "projectName": "Money.Core",
-        "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj",
+        "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj",
+        "projectName": "MoneyModule.Core",
+        "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj",
         "packagesPath": "C:\\Users\\NATHANAEL\\.nuget\\packages\\",
         "outputPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -62,12 +62,12 @@
         }
       }
     },
-    "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj": {
+    "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj",
-        "projectName": "Money.Core.Tests",
-        "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj",
+        "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj",
+        "projectName": "MoneyModule.Core.Tests",
+        "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj",
         "packagesPath": "C:\\Users\\NATHANAEL\\.nuget\\packages\\",
         "outputPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\obj\\",
         "projectStyle": "PackageReference",
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj": {
-                "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj"
+              "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj": {
+                "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj"
               }
             }
           }

@@ -1648,6 +1648,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "MoneyModule.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MoneyModule.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyModule.Core.dll": {}
+        }
       }
     }
   },
@@ -5572,11 +5582,17 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "MoneyModule.Core/1.0.0": {
+      "type": "project",
+      "path": "../Money.Core/MoneyModule.Core.csproj",
+      "msbuildProject": "../Money.Core/MoneyModule.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.7.1",
+      "MoneyModule.Core >= 1.0.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -5589,9 +5605,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj",
-      "projectName": "Money.Core.Tests",
-      "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj",
+      "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj",
+      "projectName": "MoneyModule.Core.Tests",
+      "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj",
       "packagesPath": "C:\\Users\\NATHANAEL\\.nuget\\packages\\",
       "outputPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\obj\\",
       "projectStyle": "PackageReference",
@@ -5613,7 +5629,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj": {
+              "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\MoneyModule.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

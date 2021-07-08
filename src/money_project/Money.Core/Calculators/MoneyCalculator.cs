@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MoneyModule.Core.Domain;
 
-namespace Money.Core.Calculators
+namespace MoneyModule.Core.Calculators
 {
-    internal class MoneyCalculator
+    public class MoneyCalculator
     {
         public MoneyCalculator()
         {
         }
 
-        internal Money Max(IEnumerable<Money> monies)
+        public Money Max(IEnumerable<IMoney> monies)
         {
             return new Money
             {

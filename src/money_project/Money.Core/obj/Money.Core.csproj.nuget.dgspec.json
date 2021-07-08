@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj": {}
+  },
+  "projects": {
+    "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj",
+        "projectName": "Money.Core",
+        "projectPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\Money.Core.csproj",
+        "packagesPath": "C:\\Users\\NATHANAEL\\.nuget\\packages\\",
+        "outputPath": "E:\\C# Training\\easyJetTest\\src\\money_project\\Money.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NATHANAEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/nathanaeldevops/_packaging/MyOrgFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

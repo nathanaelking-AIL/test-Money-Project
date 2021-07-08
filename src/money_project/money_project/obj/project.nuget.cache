@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mVMnFp1cPIuv++qjFM9gzwjm6UB0DgprcUdiIomRPvTnpyXfxJCMNah6IN9XDEhCusjW+BvbgHNSBkPbhOEOsA==",
+  "dgSpecHash": "dzJLK8wydvXfNG2V+1VX5n9kMum7ofgNgwE+1L5Vrp+jgjiRbT2qb2FTnEVV3ZyPg9IiU8nmNV1C2nIO3joZaQ==",
   "success": true,
-  "projectFilePath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\Money.Core.Tests.csproj",
+  "projectFilePath": "E:\\C# Training\\easyJetTest\\src\\money_project\\money_project\\MoneyModule.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NATHANAEL\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\NATHANAEL\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
