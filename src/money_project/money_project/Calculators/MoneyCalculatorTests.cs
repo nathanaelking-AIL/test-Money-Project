@@ -1,6 +1,7 @@
 ﻿using MoneyModule.Core.Domain;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace MoneyModule.Core.Calculators
@@ -52,5 +53,35 @@ namespace MoneyModule.Core.Calculators
             //Assert
             Assert.Throws<ArgumentNullException>(() => calculator.Max(null));
         }
+
+        [Fact]
+        public void ShouldReturnSumPerCurrency()
+        {
+            //arrange
+            IEnumerable<IMoney> monies = new Money[]
+            {
+                new Money() { Amount = 30.0m, Currency = "GBP" },
+                new Money() { Amount = 30.0m, Currency = "GBP" },
+                new Money() { Amount = 12.8m, Currency = "USD" },
+                new Money() { Amount = 30.8m, Currency = "USD" },
+                new Money() { Amount = 16.8m, Currency = "CDN" },
+            };
+
+            var calculator = new MoneyCalculator();
+
+            //act
+            IEnumerable<IMoney> result = calculator.SumPerCurrency(monies);
+
+            //assert
+            Assert.NotNull(result);
+            Assert.Equal(60.0m,
+                result.FirstOrDefault(x => x.Currency.Equals("GBP")).Amount);
+            Assert.Equal(43.6m,
+                result.FirstOrDefault(x => x.Currency.Equals("USD")).Amount);
+            Assert.Equal(16.8m,
+                result.FirstOrDefault(x => x.Currency.Equals("CDN")).Amount);
+        }
+
+
     }
 }
