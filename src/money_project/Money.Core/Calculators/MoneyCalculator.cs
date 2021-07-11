@@ -7,11 +7,7 @@ namespace MoneyModule.Core.Calculators
 {
     public class MoneyCalculator : IMoneyCalculator
     {
-        public MoneyCalculator()
-        {
-        }
-
-        public IMoney Max(IEnumerable<IMoney> monies)
+       public IMoney Max(IEnumerable<IMoney> monies)
         {
             if (monies is null)
                 throw new ArgumentNullException("No money list passed in argument.");
@@ -31,15 +27,14 @@ namespace MoneyModule.Core.Calculators
             if (monies is null)
                 throw new ArgumentNullException("No money list passed in argument.");
 
-            var result = monies
-                        .GroupBy(x => x.Currency)
-                        .Select(y => new Money()
-                        {
-                            Amount = y.Sum(z => z.Amount),
-                            Currency = y.Key
-                        });
+            return monies
+                    .GroupBy(x => x.Currency)
+                    .Select(y => new Money()
+                    {
+                        Amount = y.Sum(z => z.Amount),
+                        Currency = y.Key
+                    });
 
-            return result;
         }
     }
 }
